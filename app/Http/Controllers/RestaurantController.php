@@ -19,7 +19,7 @@ class RestaurantController extends Controller
     public function show($id)
     {
         $menu = [
-            1 => ['nombre' => 'Hamburguesa Clásica', 'descripcion' => 'Hamburguesa tradicional con carne 100% res.'],
+            1 => ['nombre' => 'Hamburguesa Clásica', 'descripcion' => 'Masa tradicional con Queso 100% original'],
             2 => ['nombre' => 'Hamburguesa de queso y tocino', 'descripcion' => 'Con queso cheddar y tocino crujiente.'],
             3 => ['nombre' => 'Hamburguesa vegetariana', 'descripcion' => 'Opción vegetariana con garbanzos y verduras frescas.'],
         ];
