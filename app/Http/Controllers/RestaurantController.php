@@ -9,7 +9,7 @@ class RestaurantController extends Controller
     public function index()
     {
         $menu = [
-            ['id' => 1, 'nombre' => 'Pizza Clasica', 'precio' => 40],
+            ['id' => 1, 'nombre' => 'Pizza Clasica', 'precio' => 45],
             ['id' => 2, 'nombre' => 'Hamburguesa de queso y tocino', 'precio' => 55],
             ['id' => 3, 'nombre' => 'Hamburguesa vegetariana', 'precio' => 50],
         ];
