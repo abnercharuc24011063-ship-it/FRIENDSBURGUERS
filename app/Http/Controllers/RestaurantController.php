@@ -9,7 +9,7 @@ class RestaurantController extends Controller
     public function index()
     {
         $menu = [
-            ['id' => 1, 'nombre' => 'Pizza Clasica', 'precio' => 45],
+            ['id' => 1, 'nombre' => 'Hamburguesa Clásica', 'precio' => 45],
             ['id' => 2, 'nombre' => 'Hamburguesa de queso y tocino', 'precio' => 55],
             ['id' => 3, 'nombre' => 'Hamburguesa vegetariana', 'precio' => 50],
         ];
@@ -26,4 +26,20 @@ class RestaurantController extends Controller
         $item = $menu[$id] ?? null;
         return view('restaurant.show', compact('item'));
     }
+public function create()
+{
+    return view('restaurant.pedido');
 }
+public function store(Request $request)
+{
+    $nombre = $request->input('nombre');
+    $platillo = $request->input('platillo');
+    
+    return "¡Pedido confirmado con éxito para $nombre! Platillo solicitado: $platillo";
+}
+}
+
+
+
+
+

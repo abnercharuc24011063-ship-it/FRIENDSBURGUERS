@@ -8,4 +8,4 @@
     <h1>¡Bienvenido a Friends Burgers!</h1>
     @yield('content')
 </body>
-</html>
+</html> 
