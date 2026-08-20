@@ -30,7 +30,7 @@
                 </select>
             </div>
 
-            <button type="submit" style="background-color: #d32f2f; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; width: 100%;">
+            <button type="submit" style="background-color: #cc3636; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; width: 100%;">
                 Confirmar Pedido
             </button>
         </form>
