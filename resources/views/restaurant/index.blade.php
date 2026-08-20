@@ -18,5 +18,10 @@
     </a>
 </div>
 
-@endsection
+<div style="text-align: center; margin-top: 15px;">
+    <a href="{{ route('restaurant.pedido') }}" style="background-color: #d32f2f; padding: 12px 25px; text-decoration: none; color: white; font-weight: bold; border-radius: 5px;">
+        Ver menú de pedidos
+    </a>
+</div>
 
+@endsection
