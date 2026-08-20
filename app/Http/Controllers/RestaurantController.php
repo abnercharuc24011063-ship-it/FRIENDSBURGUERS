@@ -26,19 +26,25 @@ class RestaurantController extends Controller
         $item = $menu[$id] ?? null;
         return view('restaurant.show', compact('item'));
     }
-public function create()
-{
-    return view('restaurant.pedido');
-}
-public function store(Request $request)
-{
-    $nombre = $request->input('nombre');
-    $platillo = $request->input('platillo');
-    
-    return "¡Pedido confirmado con éxito para $nombre! Platillo solicitado: $platillo";
-}
-}
 
+    public function create()
+    {
+        $menu = [
+            ['id' => 1, 'nombre' => 'Hamburguesa Clásica', 'precio' => 45],
+            ['id' => 2, 'nombre' => 'Hamburguesa de queso y tocino', 'precio' => 55],
+            ['id' => 3, 'nombre' => 'Hamburguesa vegetariana', 'precio' => 50],
+        ];
+        return view('restaurant.pedido', compact('menu'));
+    }
+
+    public function store(Request $request)
+    {
+        $nombre = $request->input('nombre');
+        $platillo = $request->input('platillo');
+
+        return "¡Pedido confirmado con éxito para $nombre! Platillo solicitado: $platillo";
+    }
+}
 
 
 
