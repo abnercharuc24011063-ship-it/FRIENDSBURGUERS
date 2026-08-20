@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@extends('layouts.app')
 
 @section('content')
     <div style="text-align: center; margin-top: 30px;">
